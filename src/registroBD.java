@@ -32,7 +32,6 @@ public registroBD() {
         }
     });
 }
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("registroBD");
         frame.setContentPane(new registroBD().registroroot);
