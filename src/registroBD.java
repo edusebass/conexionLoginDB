@@ -4,15 +4,18 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class registroBD {
+    //variables panel
     private JButton GUARDARButton;
     private JTextField userregistroField1;
     private JPanel registroroot;
     private JButton INICIARSESIONButton;
     private JPasswordField contraseñaregistroField1;
 
+    //variables de guardado
     public String usuario;
     public String password;
 
+    //variables sql
     public static final String DB_URL = "jdbc:mysql://localhost/estudiantes";
     public static final String USER = "root";
     public static final String PASSWORD = "root_bas3";
