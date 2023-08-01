@@ -1,10 +1,11 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class loginBD {
-    private JPanel rootLogin;
+    public JPanel rootLogin;
     private JButton INGRESARButton;
     private JTextField usuarioField1;
     private JPasswordField passwordField1;
@@ -45,6 +46,22 @@ public class loginBD {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        REGISTRARSEButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Close the current window
+                Component component = (Component) e.getSource();
+                JFrame currentFrame = (JFrame) SwingUtilities.getRoot(component);
+                currentFrame.dispose();
+
+                // Open the new window
+                JFrame frame = new JFrame("updateform");
+                frame.setContentPane(new main().mainroot);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
             }
         });
     }

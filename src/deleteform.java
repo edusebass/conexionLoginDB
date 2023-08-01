@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -7,7 +8,8 @@ public class deleteform {
     private JButton eliminarUsuarioButton;
     private JTextField deleteUserTextField1;
     private JPasswordField deletePasswordField1;
-    private JPanel deleteroot;
+    public JPanel deleteroot;
+    private JButton regresarButton;
 
     public String usuarioj;
     public String passwordj;
@@ -26,8 +28,11 @@ public class deleteform {
                 try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD)) {
                     String QUERY = "DELETE FROM usuariosbd WHERE nombrebd = ? AND passwordbd = ?";
                     PreparedStatement stmt = conn.prepareStatement(QUERY);
-                    stmt.setString(1, usuarioj);
-                    stmt.setString(2, passwordj);
+                    // Close the current window
+                    Component component = (Component) e.getSource();
+                    JFrame currentFrame = (JFrame) SwingUtilities.getRoot(component);
+                    currentFrame.dispose();
+
                     int rowsafeccted = stmt.executeUpdate();
 
                     if (rowsafeccted > 0) {
@@ -43,6 +48,23 @@ public class deleteform {
             }
         });
 
+        regresarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Close the current window
+                Component component = (Component) e.getSource();
+                JFrame currentFrame = (JFrame) SwingUtilities.getRoot(component);
+                currentFrame.dispose();
+
+                // Open the new window
+                JFrame frame = new JFrame("updateform");
+                frame.setContentPane(new main().mainroot);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
+
+            }
+        });
     }
     // Método para mostrar un mensaje con JOptionPane.showMessageDialog
     private void mostrarMensaje(String mensaje) {

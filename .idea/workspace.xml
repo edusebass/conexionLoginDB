@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feb074bb-2f80-4727-a225-abd05ea349e1" name="Changes" comment="LOGINCONEXION db">
-      <change afterPath="$PROJECT_DIR$/src/deleteform.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deleteform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/updateform.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/updateform.java" afterDir="false" />
+    <list default="true" id="feb074bb-2f80-4727-a225-abd05ea349e1" name="Changes" comment="CRUD COMPLETO">
+      <change afterPath="$PROJECT_DIR$/src/main.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deleteform.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteform.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deleteform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginBD.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginBD.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/loginBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registroBD.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/registroBD.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/registroBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/registroBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/updateform.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/updateform.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/updateform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/updateform.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,30 +50,30 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.updateform (1)">
-    <configuration name="deleteform (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.main">
+    <configuration name="deleteform" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="deleteform" />
       <module name="LoginConectadoBD" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="deleteform (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="deleteform" />
+    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
       <module name="LoginConectadoBD" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="registroBD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="registroBD" />
+    <configuration name="main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
       <module name="LoginConectadoBD" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="updateform (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="updateform" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
       <module name="LoginConectadoBD" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,11 +88,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.updateform (1)" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.main (2)" />
+        <item itemvalue="Application.main (1)" />
         <item itemvalue="Application.updateform" />
-        <item itemvalue="Application.registroBD" />
-        <item itemvalue="Application.deleteform (2)" />
-        <item itemvalue="Application.deleteform (1)" />
+        <item itemvalue="Application.deleteform" />
       </list>
     </recent_temporary>
   </component>
@@ -101,6 +105,18 @@
       <option name="presentableId" value="Default" />
       <updated>1690561466208</updated>
     </task>
+    <task id="LOCAL-00001" summary="CRUD COMPLETO">
+      <created>1690900842886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690900842886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CRUD COMPLETO" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD COMPLETO" />
   </component>
 </project>

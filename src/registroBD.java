@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -7,8 +8,8 @@ public class registroBD {
     //variables panel
     private JButton GUARDARButton;
     private JTextField userregistroField1;
-    private JPanel registroroot;
-    private JButton INICIARSESIONButton;
+    public JPanel registroroot;
+    private JButton REGRESARButton;
     private JPasswordField contraseñaregistroField1;
 
     //variables de guardado
@@ -56,6 +57,22 @@ public class registroBD {
                 } catch (SQLException ex) {
                     throw new RuntimeException("Error al conectar a la base de datos", ex);
                 }
+            }
+        });
+        REGRESARButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Close the current window
+                Component component = (Component) e.getSource();
+                JFrame currentFrame = (JFrame) SwingUtilities.getRoot(component);
+                currentFrame.dispose();
+
+                // Open the new window
+                JFrame frame = new JFrame("updateform");
+                frame.setContentPane(new main().mainroot);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
             }
         });
     }
