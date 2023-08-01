@@ -18,7 +18,7 @@ public class registroBD {
     //variables sql
     public static final String DB_URL = "jdbc:mysql://localhost/sistemalogin";
     public static final String USER = "root";
-    public static final String PASSWORD = "edu1751395623";
+    public static final String PASSWORD = "root_bas3";
 
     public registroBD() {
         GUARDARButton.addActionListener(new ActionListener() {
@@ -44,6 +44,8 @@ public class registroBD {
                                 stmtInsertUser.setString(2, passwordj);
                                 stmtInsertUser.executeUpdate();
                                 mostrarMensaje("Datos ingresados con éxito en la base de datos.");
+                                userregistroField1.setText("");
+                                contraseñaregistroField1.setText("");
                             } catch (SQLException ex) {
                                 throw new RuntimeException("Error al ejecutar la consulta SQL de inserción", ex);
                             }

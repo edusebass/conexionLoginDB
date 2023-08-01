@@ -15,7 +15,7 @@ public class loginBD {
 
     public static final String DB_URL = "jdbc:mysql://localhost/sistemalogin";
     public static final String USER = "root";
-    public static final String PASSWORD = "edu1751395623";
+    public static final String PASSWORD = "root_bas3";
 
     public loginBD() {
         INGRESARButton.addActionListener(new ActionListener() {
