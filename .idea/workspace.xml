@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feb074bb-2f80-4727-a225-abd05ea349e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_33.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginConectadoBD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loginBD.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loginBD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/registroBD.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/registroBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginConectadoBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LoginConectadoBD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registroBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/registroBD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +31,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/POO/Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar",
-    "onboarding.tips.debug.path": "C:/Users/POO/IdeaProjects/LoginConectadoBD/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eduar/OneDrive/Documents/3 SEMESTRE/POO/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/POO/IdeaProjects/LoginConectadoBD/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.registroBD">
-    <configuration name="BDventana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BDventana" />
+    <configuration name="loginBD (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="loginBD" />
       <module name="LoginConectadoBD" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,6 +60,20 @@
     </configuration>
     <configuration name="loginBD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="loginBD" />
+      <module name="LoginConectadoBD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="registroBD (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="registroBD" />
+      <module name="LoginConectadoBD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="registroBD (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="registroBD" />
       <module name="LoginConectadoBD" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,8 +89,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.registroBD" />
+        <item itemvalue="Application.registroBD (2)" />
+        <item itemvalue="Application.loginBD (1)" />
+        <item itemvalue="Application.registroBD (1)" />
         <item itemvalue="Application.loginBD" />
-        <item itemvalue="Application.BDventana" />
       </list>
     </recent_temporary>
   </component>
@@ -89,7 +104,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690561466208</updated>
+      <workItem from="1690595809438" duration="729000" />
+      <workItem from="1690673196094" duration="1827000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

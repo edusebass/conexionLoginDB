@@ -12,29 +12,57 @@ public class registroBD {
     private JPasswordField contraseñaregistroField1;
 
     //variables de guardado
-    public String usuario;
-    public String password;
+    public String usuarioj;
+    public String passwordj;
 
     //variables sql
-    public static final String DB_URL = "jdbc:mysql://localhost/estudiantes";
+    public static final String DB_URL = "jdbc:mysql://localhost/sistemalogin";
     public static final String USER = "root";
-    public static final String PASSWORD = "root_bas3";
+    public static final String PASSWORD = "edu1751395623";
 
-public registroBD() {
-    GUARDARButton.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            usuario = userregistroField1.getText();
-            password = contraseñaregistroField1.getText();
-            try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD)) {
-
-
-            } catch (SQLException x) {
-                throw new RuntimeException(x);
+    public registroBD() {
+        GUARDARButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                usuarioj = userregistroField1.getText();
+                passwordj = new String(contraseñaregistroField1.getPassword());
+                try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD)) {
+                    // Verificar si el usuario ya existe en la base de datos
+                    String queryCheckUser = "SELECT COUNT(*) FROM usuariosbd WHERE nombrebd = ?";
+                    try (PreparedStatement stmtCheckUser = conn.prepareStatement(queryCheckUser)) {
+                        stmtCheckUser.setString(1, usuarioj);
+                        ResultSet rs = stmtCheckUser.executeQuery();
+                        rs.next();
+                        int count = rs.getInt(1);
+                        if (count > 0) {
+                            mostrarMensaje("El usuario ya existe. Intente con otras credenciales.");
+                        } else {
+                            // Insertar el usuario y la contraseña en la base de datos
+                            String queryInsertUser = "INSERT INTO usuariosbd (nombrebd, passwordbd) VALUES (?, ?)";
+                            try (PreparedStatement stmtInsertUser = conn.prepareStatement(queryInsertUser)) {
+                                stmtInsertUser.setString(1, usuarioj);
+                                stmtInsertUser.setString(2, passwordj);
+                                stmtInsertUser.executeUpdate();
+                                mostrarMensaje("Datos ingresados con éxito en la base de datos.");
+                            } catch (SQLException ex) {
+                                throw new RuntimeException("Error al ejecutar la consulta SQL de inserción", ex);
+                            }
+                        }
+                    } catch (SQLException ex) {
+                        throw new RuntimeException("Error al ejecutar la consulta SQL de verificación", ex);
+                    }
+                } catch (SQLException ex) {
+                    throw new RuntimeException("Error al conectar a la base de datos", ex);
+                }
             }
-        }
-    });
-}
+        });
+    }
+
+    // Método para mostrar un mensaje con JOptionPane.showMessageDialog
+    private void mostrarMensaje(String mensaje) {
+        JOptionPane.showMessageDialog(registroroot, mensaje, "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+    }
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("registroBD");
         frame.setContentPane(new registroBD().registroroot);

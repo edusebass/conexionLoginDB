@@ -13,9 +13,9 @@ public class loginBD {
     public String usuario;
     public String password;
 
-    public static final String DB_URL = "jdbc:mysql://localhost/estudiantes";
+    public static final String DB_URL = "jdbc:mysql://localhost/sistemalogin";
     public static final String USER = "root";
-    public static final String PASSWORD = "root_bas3";
+    public static final String PASSWORD = "edu1751395623";
 
     public loginBD() {
         INGRESARButton.addActionListener(new ActionListener() {
@@ -25,7 +25,7 @@ public class loginBD {
                 password = passwordField1.getText();
 
                 try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD)) {
-                    String QUERY = "SELECT nombre FROM estudiantes WHERE nombre = ? AND password = ?";
+                    String QUERY = "SELECT nombre FROM usuarios WHERE nombre = ? AND password = ?";
                     PreparedStatement stmt = conn.prepareStatement(QUERY);
                     stmt.setString(1, usuario);
                     stmt.setString(2, password);
